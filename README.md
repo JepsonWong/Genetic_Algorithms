@@ -1,4 +1,4 @@
-本项目实现了遗传算法。转载自
+本项目实现了遗传算法。转载自(https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650728869&idx=4&sn=377e2da3d6fe3ec06154d4cc01a9c6e0&scene=0#wechat_redirect)
 #### 遗传算法的步骤：
 * 初始化
 该过程从种群的一组个体开始，且每一个体都是待解决问题的一个候选解。  
