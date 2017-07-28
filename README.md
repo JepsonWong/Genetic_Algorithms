@@ -17,15 +17,17 @@
 在群体收敛的情况下（群体内不产生与前一代差异较大的后代）该算法终止。也就是说遗传算法提供了一组问题的解。
 
 #### 案例实现
-种群的规模恒定。新一代形成时，适应度最差的个体凋亡，为后代留出空间。这些阶段的序列被不断重复，以产生优于先前的新一代。
+种群的规模恒定。新一代形成时，适应度最差的个体凋亡，为后代留出空间。这些阶段的序列被不断重复，以产生优于先前的新一代。  
 这一迭代过程的伪代码：
-      START
-      Generate the initial population
-      Compute fitness
-      REPEAT
-            Selection
-            Crossover
-            Mutation
+`
+START
+Generate the initial population
+Compute fitness
+REPEAT
+    Selection
+    Crossover
+    Mutation
     Compute fitness
 UNTIL population has converged
 STOP
+`
