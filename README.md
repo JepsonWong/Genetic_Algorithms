@@ -19,7 +19,7 @@
 #### 案例实现
 种群的规模恒定。新一代形成时，适应度最差的个体凋亡，为后代留出空间。这些阶段的序列被不断重复，以产生优于先前的新一代。  
 这一迭代过程的伪代码:  
-`
+
 START  
 Generate the initial population  
 Compute fitness  
@@ -30,4 +30,3 @@ REPEAT
     Compute fitness  
 UNTIL population has converged  
 STOP
-`
