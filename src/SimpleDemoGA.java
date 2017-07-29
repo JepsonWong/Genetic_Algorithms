@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class SimpleDemoGA {
 
-    Population population = new Population();
+    Population population = new Population(); // 种群
     Individual fittest;
     Individual secondFittest;
     int generationCount = 0;
@@ -17,10 +17,10 @@ public class SimpleDemoGA {
         SimpleDemoGA demo = new SimpleDemoGA();
 
         //Initialize population
-        demo.population.initializePopulation(10);
+        demo.population.initializePopulation(10); // 初始化
 
         //Calculate fitness of each individual
-        demo.population.calculateFitness();
+        demo.population.calculateFitness();  // 个体评价
 
         System.out.println("Generation: " + demo.generationCount + " Fittest: " + demo.population.fittest);
 
@@ -29,21 +29,21 @@ public class SimpleDemoGA {
             ++demo.generationCount;
 
             //Do selection
-            demo.selection();
+            demo.selection();  // 选择运算
 
             //Do crossover
-            demo.crossover();
+            demo.crossover(); //  交叉运算
 
             //Do mutation under a random probability
             if (rn.nextInt()%7 < 5) {
-                demo.mutation();
+                demo.mutation();  // 变异运算
             }
 
             //Add fittest offspring to population
-            demo.addFittestOffspring();
+            demo.addFittestOffspring();  // 用最适应的后代替换最不适应的个体；其实相当于population只更新了一个
 
             //Calculate new fitness value
-            demo.population.calculateFitness();
+            demo.population.calculateFitness();  // 个体评价
 
             System.out.println("Generation: " + demo.generationCount + " Fittest: " + demo.population.fittest);
         }
